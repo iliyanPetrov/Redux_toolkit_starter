@@ -8,11 +8,13 @@ import {
     decrementByAmount } from "../app/redux/counterSlice"
 
 function Counter() {
-
+  
   const count = useSelector((state) => state.counterReducer.value);
   const dispatch = useDispatch();
+  
   const [incr, setIncr] = useState(0);
   const addValue = Number(incr) || 0 ;
+  
   const resetAllValues = () => {
     setIncr(0);
     dispatch(resetCount())

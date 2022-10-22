@@ -1,10 +1,10 @@
 
 import { configureStore } from '@reduxjs/toolkit';
-import bananas from "./counterSlice";
+import counterSlice from "./counterSlice";
 
 export const store = configureStore({
   reducer: {
-    counterReducer: bananas,
+    counterReducer: counterSlice,
   },
 })
 
